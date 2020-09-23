@@ -153,7 +153,7 @@ print('正在运行下载器服务端：')
 host = socket.gethostname()
 print('本地计算机名：')
 print(host)
-port = 12345
+port = <端口号>#50001
 print('监听端口：')
 print(port)
 

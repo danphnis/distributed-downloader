@@ -14,8 +14,8 @@ host = '<address>'#socket.gethostname() # 获取本地主机名
 port = <端口号>#50001             # 设置端口号
  
 s.connect((host, port))
-#s.send('<用户名>'.encode()) #向远程服务器发送用户名
-s.send(sys.argv[1].encode())
+s.send('<用户名>'.encode()) #向远程服务器发送用户名
+#s.send(sys.argv[1].encode())
 
 print( s.recv(1024).decode('utf-8'))
 s.send('ready'.encode())

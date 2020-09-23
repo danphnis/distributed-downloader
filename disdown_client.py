@@ -11,7 +11,7 @@ import sys
 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)         # 创建 socket 对象
 host = '<address>'#socket.gethostname() # 获取本地主机名
-port = 12345                # 设置端口号
+port = <端口号>#50001             # 设置端口号
  
 s.connect((host, port))
 #s.send('<用户名>'.encode()) #向远程服务器发送用户名
